@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "raleway",Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#signup-box{
+    max-width:400px;
+   
+}
+form{
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 16px;
+    border: none;
+    align-self: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cancel-btn{
+    font-size: 40px;
+    float: right;
+    text-align: start;
+    rotate: 45deg;
+    cursor: pointer;
+    margin-right: 15px;
+}
+

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "raleway",Arial, Helvetica, sans-serif;
+}
+
+.banner{
+    background-image: url(back.jpg);
+    filter: opacity(95%);
+    width: 100%;
+    min-height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+.banner-heading{
+    margin-top: 150px;
+}
+
+.blog-img{
+    background-image: url(order.jpg);
+    width: 50%;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+.blog-img2{
+    background-image: url(feedback1.jpg);
+    width: 50%;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul h4{
+    color:#ffc107;
+}
+
+footer{
+    background-color: black;
+}
+
+.blogimg3{
+    background-image: url(deals.jpg);
+    width: 50%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#icon-panel{
+    display: flex;
+    flex-direction: row;
+}
+
+#icon-panel div{
+    height: 35px;
+    width: 35px;
+}
+
+#icon-panel i{
+    font-size: 28px;
+}
