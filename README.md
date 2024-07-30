@@ -20,4 +20,5 @@ CrispyCrusts is an online food delivery platform that offers a variety of delici
 - **HTML5**: For structuring the website.
 - **CSS3**: For styling the website.
 - **Bootstrap 5**: For responsive design and UI components.
+- **JavaScript**: For interactivity and dynamic content.
 - **Font Awesome**: For icons.
