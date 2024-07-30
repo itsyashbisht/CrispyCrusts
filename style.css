@@ -16,6 +16,10 @@
 .banner-heading{
     margin-top: 150px;
 }
+.signup-btn{
+    text-decoration: none;
+    
+}
 
 .blog-img{
     background-image: url(order.jpg);

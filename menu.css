@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "raleway",Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f4f4f4;
+}
+
+.food-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.food-card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 280px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.food-card img{
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.food-card p{
+    font-size: smaller;
+}
+.food-card h6,p{
+    text-align: center;
+}
+
+.food-card:hover{
+    transform: scale(1.05);
+    transition: ease-in-out;
+}
+
+.food-card strong{
+    font-family: "raleway",Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav.nav.nav-link.active{
+        color: #FFD700;
+}
