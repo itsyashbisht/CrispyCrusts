@@ -15,16 +15,16 @@ body{
     width: 100%;
     position: fixed;
 }
-.navbar2{
-    position: fixed;
-}
+
 .food-list{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
 }
-
+#content{
+    margin-top: 80px
+}
 
 .food-card{
     border: 1px solid #ddd;
