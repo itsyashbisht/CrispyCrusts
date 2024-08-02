@@ -21,17 +21,27 @@ body{
 }
 
 #navMenu{
-    border-bottom: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     position: fixed;
     z-index: 1000;
-
-
+}#navbar1 .nav-link {
+    color: black;
 }
 .navbar{
     width: 100%;
     top: 0;
     position: fixed;
 }
+ #navbar2 .active{
+    background-color: #ffc107;
+    border-top: 100px;
+    border-radius: 10px;
+ }
+
+ #navbar2 .nav-link {
+    color: black;
+    font-weight: 500;
+ }
 
 .food-list{
     display: flex;
@@ -164,7 +174,7 @@ ul h4{
      }
      @media (min-width:425px) and (max-width:768px){
         #content{
-            margin-top: 116px;
+            margin-top: 68px;
             padding-top: 8px;
             position: fixed;
             overflow-y: auto;
@@ -200,7 +210,7 @@ ul h4{
 
      @media (min-width:0px) and (max-width:320px) {
         #navbar2 .nav-link{
-            font-size: 11px;
+            font-size: 10px;
             flex-wrap: wrap;
         }
         #navbar2 .navbar-brand{
@@ -217,6 +227,9 @@ ul h4{
             margin-top: 10px;
             padding-top: 30px;
         }
+        #navbar2 .nav-link {
+            color: black;
+         }
      }
 
      @media(width:768px){
