@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="banner">
-      <div class="fixed-top mb-5">
+      <div class="fixed-top mb-2" id="navMenu">
         <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
           <div class="container">
             <a class="navbar-brand fw-bold" href="#">Crispy Crusts</a>
@@ -59,8 +59,8 @@
             </div>
           </div>
         </nav>
-        <nav id="navbar2" class="navbar bg-body-tertiary px-3 mb-5">
-          <a class="navbar-brand fw-bold" href="menu.html">Menu</a>
+        <nav id="navbar2" class="navbar bg-body-tertiary px-3 ">
+          <a id="Menutag" class="navbar-brand fw-bold" href="menu.html">Menu</a>
           <ul class="nav nav-pills">
             <li class="nav-item">
               <a class="nav-link" href="#list-example1">Burgers</a>
@@ -77,16 +77,17 @@
           </ul>
         </nav>
       </div>
-      <div
+      <div class="content-conatiner mt-md-5 mt-sm-5 mt-lg-0">
+        <div
         id="content"
         data-bs-spy="scroll"
         data-bs-target="#navbar2"
         data-bs-root-margin="0px 0px -40%"
         dat-bs-smooth-scroll="true"
-        class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+        class="scrollspy-example bg-body-tertiary rounded-2 "
         tabindex="0"
       >
-        <section class="food-list mt-4" id="list-example1">
+        <section class="food-list mt-sm-3 pt-sm-5 p-md-4 pt-lg-3  pt-md-3" id="list-example1">
           <div class="food-card">
             <img src="B1.jpg" alt="" />
             <h6 class="card-title py-2">Caribbean Spicy Zinger Burger</h6>
@@ -158,7 +159,7 @@
             <button class="btn btn-outline-warning">Add to Cart</button>
           </div>
         </section>
-        <section class="food-list mt-4" id="list-example2">
+        <section class="food-list mt-sm-4  pt-sm-5  mt-md-4  pt-lg-3  pt-md-3" id="list-example2">
           <div class="food-card">
             <img src="P1.jpg" alt="" />
             <h6 class="card-title py-2">Classic Margherita Royale</h6>
@@ -230,7 +231,7 @@
             <button class="btn btn-outline-warning">Add to Cart</button>
           </div>
         </section>
-        <section class="food-list mt-4" id="list-example3">
+        <section class="food-list mt-sm-4  pt-sm-5  mt-md-4  pt-lg-3  pt-md-3" id="list-example3">
           <div class="food-card">
             <img src="bev1.jpg" alt="" />
             <h6 class="card-title py-2">Pepsi 475ml PET</h6>
@@ -277,7 +278,7 @@
             <button class="btn btn-outline-warning">Add to Cart</button>
           </div>
         </section>
-        <section class="food-list mt-4" id="list-example4">
+        <section class="food-list mt-sm-4  pt-sm-5  mt-md-4   pt-md-3" id="list-example4">
           <div class="food-card">
             <img src="D1.jpg" alt="" />
             <h6 class="card-title py-2">Chocolate Lava Cake</h6>
@@ -340,6 +341,75 @@
           </div>
         </section>
       </div>
+      </div>
+     
+      <footer class="py-5 ps-5 mt-4 " style="display: none;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <form action="">
+                <ul style="list-style-type: none;">
+                  <h4 class="text-left">About Us</h4>
+                  <li class="text-light text-left">About Us Overview</li>
+                  <li class="text-light text-left">Leadership Team</li>
+                  <li class="text-light text-left">Values In Action</li>
+                  <li class="text-light text-left">Values In Action</li>
+                  <li class="text-light text-left">Recalls & Alerts</li>
+                  <li class="text-light text-left">News & Notifications</li>
+                </ul>
+              </form>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              
+              <ul style="list-style-type: none;">
+                <h4 class="text-left">Services</h4>
+                <li class="text-light text-left">Delivery Partners</li>
+                <li class="text-light text-left">PlayPlaces & Parties</li>
+                <li class="text-light text-left">Mobile Order & Pay</li>
+                <li class="text-light text-left">Trending Now</li>
+                <li class="text-light text-left">Foodex’s Merchandise</li>
+                <li class="text-light text-left">Foodex's Rewards</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              
+              <ul style="list-style-type: none;">
+                <h4 class="text-left">Community</h4>
+                <li class="text-light text-left">Community Overview</li>
+                <li class="text-light text-left">Now Serving</li>
+                <li class="text-light text-left">HACER® Scholarships for Hispanic Students</li>
+                <li class="text-light text-left">Black and Positively Golden</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md4 col-sm-12">
+              
+              <ul style="list-style-type: none;">
+                <h4 class="text-left">Contact Us</h4>
+                <li class="text-light text-left">Contact Us Overview</li>
+                <li class="text-light text-left">Gift Card FAQs</li>
+                <li class="text-light text-left">Donations</li>
+                <li class="text-light text-left">Employment</li>
+                <li class="text-light text-left">Customer Feedback</li>
+                <li class="text-light text-left">Frequently Asked Questions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div id="icon-panel">
+            <div ><i class="fa-brands fa-facebook" style="color: #FFD43B;"><a href="#"></a></i></div>
+            <div class="ms-3"><i class="fa-brands fa-instagram" style="color: #FFD43B;"><a href="#"></a></i></div>
+            <div class="ms-3"> <i class="fa-brands fa-youtube" style="color: #FFD43B;"><a href="#"></a></i></div>
+          </div>
+        </div>
+        <br>
+        <div class="footer">
+          <br style="color: #FFD43B;">
+          <h6 class="text-center text-light">©2024 CrispyCrusts. All Rights Reserved</h6>
+        </div>
+      </footer>
+   
     </div>
+  
   </body>
 </html>

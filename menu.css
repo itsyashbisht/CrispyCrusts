@@ -7,12 +7,29 @@
 }
 html, body {
     overflow-x: hidden;
+    margin: 0;
+    height: 100%;
 }
 body{
     background-color: #f4f4f4;
+    min-height: 100vh;
+}
+.content-container{
+    position:fixed ;
+    padding-top: 136px;
+    margin-top: 20px;
+}
+
+#navMenu{
+    border-bottom: 1px solid black;
+    position: fixed;
+    z-index: 1000;
+
+
 }
 .navbar{
     width: 100%;
+    top: 0;
     position: fixed;
 }
 
@@ -23,7 +40,19 @@ body{
     justify-content: center;
 }
 #content{
-    margin-top: 80px
+    position:relative;
+    margin-top: 136px;
+    padding-top: 10px;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 60px;
+}
+
+.scrollspy-example{
+    height: 100%;
+    position: relative;
+    margin-top: 0.5rem;
+    overflow: auto;
 }
 
 .food-card{
@@ -65,3 +94,148 @@ body{
 .navbar-nav.nav.nav-link.active{
         color: #FFD700 !important;
 }
+
+ footer{
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+#icon-panel{
+    display: flex;
+    flex-direction: row;
+}
+
+#icon-panel div{
+    height: 35px;
+    width: 35px;
+}
+
+#icon-panel i{
+    font-size: 28px;
+}
+ul h4{
+    color:#ffc107;
+}
+
+
+
+
+
+/* Responsiveness for different screen-size  */
+
+@media (min-width:768px){
+    #content{
+        position: fixed;
+        width: 100%;
+        margin-top: 112px;
+        overflow-y: auto;
+        height: 100%;
+        z-index: auto;
+    }
+    .navbar2{
+        position: fixed;
+       
+    }
+    .content-container{
+        padding-top: 136px;
+        margin-top: 20px;
+        position: fixed;
+    }
+    }
+    @media (min-width:375px) and (max-width:426px){
+        #content{
+            margin-top: 116px;
+            padding-top: 8px;
+            position: fixed;
+            overflow-y: auto;
+            height: 100%;
+        }
+        section{
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+        .navbar2{
+            position: fixed;
+        }
+          .navbar .nav-link {
+            padding: 10px;
+          }
+     }
+     @media (min-width:425px) and (max-width:768px){
+        #content{
+            margin-top: 116px;
+            padding-top: 8px;
+            position: fixed;
+            overflow-y: auto;
+            height: 100%;
+        }
+        section{
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+        .navbar2{
+            position: fixed;
+        }
+          .navbar .nav-link {
+            padding: 10px;
+          }
+     }
+
+     @media (min-width:375px)and (max-width:425px){
+        #content{
+            margin-top: 136px;
+            position: fixed;
+            overflow-y: auto;
+            height: 100%;
+
+        }
+        section{
+            margin-top: 10px;
+            padding-top: 40px;
+            
+        }
+
+     }
+
+     @media (min-width:0px) and (max-width:320px) {
+        #navbar2 .nav-link{
+            font-size: 11px;
+            flex-wrap: wrap;
+        }
+        #navbar2 .navbar-brand{
+            text-align: center;
+
+        }
+        #content{
+            margin-top: 136px;
+            position: fixed;
+            overflow-y: auto;
+            height: 100%;
+        }
+        section{
+            margin-top: 10px;
+            padding-top: 30px;
+        }
+     }
+
+     @media(width:768px){
+        #content{
+            margin-top: 68px;
+            padding-top: 8px;
+            position: fixed;
+            overflow-y: auto;
+            height: 100%;
+        }
+        section{
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+        .navbar2{
+            position: fixed;
+        }
+          .navbar .nav-link {
+            padding: 10px;
+          }
+     }
+     /* Responsiveness content */
