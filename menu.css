@@ -316,3 +316,24 @@ ul h4 {
 
 }
 /* Responsiveness content */
+
+footer li {
+    @media (max-width:375px) {
+        font-size: smaller;
+        
+    }
+}
+
+footer h4 {
+    @media (max-width:375px) {
+        font-size: small;
+        
+    }
+}
+
+footer li {
+    @media (max-width:768px) {
+        font-size:medium;
+        
+    }
+}
