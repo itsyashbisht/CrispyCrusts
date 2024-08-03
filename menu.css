@@ -1,76 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
-    font-family: "raleway",Arial, Helvetica, sans-serif;
+    font-family: "raleway", Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
     overflow-x: hidden;
     margin: 0;
     height: 100%;
 }
-body{
+
+body {
     background-color: #f4f4f4;
     min-height: 100vh;
 }
-.content-container{
-    position:fixed ;
+
+.content-container {
+    position: fixed;
     padding-top: 136px;
     margin-top: 20px;
 }
 
-#navMenu{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+#navMenu {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: fixed;
     z-index: 1000;
 }
+
 #navbar1 .nav-link {
     color: black !important;
 }
-#navbar1 .active{
-    background-color: white ;
+
+#navbar1 .active {
+    background-color: white;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     top: 0;
     position: fixed;
 }
- #navbar2 .active{
+
+#navbar2 .active {
     background-color: #ffc107;
     border-top: 100px;
     border-radius: 10px;
- }
+}
 
- #navbar2 .nav-link {
+#navbar2 .nav-link {
     color: black !important;
     font-weight: 500;
- }
+}
 
-.food-list{
+.food-list {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
 }
-#content{
-    position:relative;
-    margin-top: 136px;
-    padding-top: 10px;
+
+#content {
+    position: fixed;
+    margin-top: 150px;
+    padding-top: 20px;
     height: 100%;
     overflow-y: auto;
     padding-bottom: 60px;
 }
-
-.scrollspy-example{
+section{
+    padding-top: 20px;
+}
+.scrollspy-example {
     height: 100%;
     position: relative;
     margin-top: 0.5rem;
     overflow: auto;
 }
 
-.food-card{
+.food-card {
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 280px;
@@ -83,54 +94,58 @@ body{
 
 }
 
-.food-card img{
+.food-card img {
     max-width: 220px;
     width: 100%;
     height: auto;
     border-radius: 4px;
 }
 
-.food-card p{
+.food-card p {
     font-size: smaller;
 }
-.food-card h6,p{
+
+.food-card h6,
+p {
     text-align: center;
 }
 
-.food-card:hover{
+.food-card:hover {
     transform: scale(1.05);
     transition: ease-in-out;
 }
 
-.food-card strong{
-    font-family: "raleway",Arial, Helvetica, sans-serif;
+.food-card strong {
+    font-family: "raleway", Arial, Helvetica, sans-serif;
 }
 
-.navbar-nav.nav.nav-link.active{
-        color: #FFD700 !important;
+.navbar-nav.nav.nav-link.active {
+    color: #FFD700 !important;
 }
 
- footer{
+footer {
     background-color: black;
     bottom: 0;
     width: 100%;
     position: relative;
 }
-#icon-panel{
+
+#icon-panel {
     display: flex;
     flex-direction: row;
 }
 
-#icon-panel div{
+#icon-panel div {
     height: 35px;
     width: 35px;
 }
 
-#icon-panel i{
+#icon-panel i {
     font-size: 28px;
 }
-ul h4{
-    color:#ffc107;
+
+ul h4 {
+    color: #ffc107;
 }
 
 
@@ -139,8 +154,8 @@ ul h4{
 
 /* Responsiveness for different screen-size  */
 
-@media (min-width:768px){
-    #content{
+@media (min-width:768px) {
+    #content {
         position: fixed;
         width: 100%;
         margin-top: 112px;
@@ -148,112 +163,156 @@ ul h4{
         height: 100%;
         z-index: auto;
     }
-    .navbar2{
+
+    .navbar2 {
         position: fixed;
-       
+
     }
-    .content-container{
+
+    .content-container {
         padding-top: 136px;
         margin-top: 20px;
         position: fixed;
+        margin-top: auto;
     }
+}
+
+/* @media (min-width:375px) and (max-width:424px) {
+    #content {
+        margin-top: 136px;
+        padding-top: 8px;
+        position: fixed;
+        overflow-y: auto;
+        height: 100%;
     }
-    @media (min-width:375px) and (max-width:426px){
-        #content{
-            margin-top: 116px;
-            padding-top: 8px;
-            position: fixed;
-            overflow-y: auto;
-            height: 100%;
-        }
-        section{
-            margin-top: 20px;
-            padding-top: 10px;
-        }
-        .navbar2{
-            position: fixed;
-        }
-          .navbar .nav-link {
-            padding: 10px;
-          }
-     }
-     @media (min-width:425px) and (max-width:768px){
-        #content{
-            margin-top: 68px;
-            padding-top: 8px;
-            position: fixed;
-            overflow-y: auto;
-            height: 100%;
-        }
-        section{
-            margin-top: 20px;
-            padding-top: 10px;
-        }
-        .navbar2{
-            position: fixed;
-        }
-          .navbar .nav-link {
-            padding: 10px;
-          }
-     }
 
-     @media (min-width:375px)and (max-width:425px){
-        #content{
-            margin-top: 136px;
-            position: fixed;
-            overflow-y: auto;
-            height: 100%;
+    section {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
 
-        }
-        section{
-            margin-top: 10px;
-            padding-top: 40px;
-            
-        }
+    .navbar2 {
+        position: fixed;
+    }
 
-     }
+    .navbar .nav-link {
+        padding: 10px;
+    }
+} */
 
-     @media (min-width:0px) and (max-width:320px) {
-        #navbar2 .nav-link{
-            font-size: 10px;
-            flex-wrap: wrap;
-        }
-        #navbar2 .navbar-brand{
-            text-align: center;
+@media (min-width:426px) and (max-width:768px) {
+    #content {
+        margin-top: 68px;
+        padding-top: 8px;
+        position: fixed;
+        overflow-y: auto;
+        height: 100%;
+    }
 
-        }
-        #content{
-            margin-top: 136px;
-            position: fixed;
-            overflow-y: auto;
-            height: 100%;
-        }
-        section{
-            margin-top: 10px;
-            padding-top: 30px;
-        }
-        #navbar2 .nav-link {
-            color: black;
-         }
-     }
+    section {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
 
-     @media(width:768px){
-        #content{
-            margin-top: 68px;
-            padding-top: 8px;
-            position: fixed;
-            overflow-y: auto;
-            height: 100%;
-        }
-        section{
-            margin-top: 20px;
-            padding-top: 10px;
-        }
-        .navbar2{
-            position: fixed;
-        }
-          .navbar .nav-link {
-            padding: 10px;
-          }
-     }
-     /* Responsiveness content */
+    .navbar2 {
+        position: fixed;
+    }
+
+    .navbar .nav-link {
+        padding: 10px;
+    }
+}
+
+@media (min-width:375px)and (max-width:424px) {
+    #content {
+        margin-top: 136px;
+        position: fixed;
+        overflow-y: auto;
+        height: 100%;
+
+    }
+
+    section {
+        margin-top: 10px;
+        padding-top: 40px;
+
+    }
+    
+    .navbar2 {
+        position: fixed;
+    }
+
+    .navbar .nav-link {
+        padding: 10px;
+    }
+}
+
+@media (min-width:0px) and (max-width:320px) {
+    #navbar2 .nav-link {
+        font-size: 10px;
+        flex-wrap: wrap;
+    }
+
+    #navbar2 .navbar-brand {
+        text-align: center;
+
+    }
+
+    #content {
+        margin-top: 136px;
+        position: fixed;
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    section {
+        margin-top: 10px;
+        padding-top: 30px;
+    }
+
+    #navbar2 .nav-link {
+        color: black;
+    }
+}
+
+@media(width:768px) {
+    #content {
+        margin-top: 68px;
+        padding-top: 8px;
+        position: fixed;
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    section {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+
+    .navbar2 {
+        position: fixed;
+    }
+
+    .navbar .nav-link {
+        padding: 10px;
+    }
+}
+
+
+@media (width:375px){
+    #content {
+        margin-top: 136px;
+        position: fixed;
+        overflow-y: auto;
+        height: 100%;
+
+    }
+
+    section {
+        margin-top: 10px;
+        padding-top: 40px;
+
+    }
+
+}
+/* Responsiveness content */
