@@ -12,13 +12,80 @@
     min-height: 100vh;
     background-size:cover;
     background-position: center;
+    /* filter: brightness(70%); */
 }
+/* .banner::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+}
+.banner{
+    opacity: 1;
+} */
+.show{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 .banner-heading{
-    margin-top: 150px;
+    z-index: 1;
+    padding-top: 210px;
+    top: 50%;
+    left: 50%;
 }
+.para1{
+    z-index: 1;
+}
+
 .signup-btn{
     text-decoration: none;
     
+}
+#Signup-box{
+    position: fixed;
+    max-width:400px;
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+    transform: translate(-50%,-50%); 
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ 
+.nav-box{
+    background-color: #ffc107;
+}
+.navbar .active {
+    background-color: white;
+    border-radius: 8px;
+    padding-left: 3%;
+}
+.navbar .nav-link {
+    color: black !important;
+}
+form{
+    max-width: 400px;
+    padding: 20px; 
+    border-radius: 16px;
+    border: none;
+    align-self: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cancel-btn{
+    font-size: 40px;
+    float: right;
+    text-align: start;
+    rotate: 45deg;
+    cursor: pointer;
+    margin-right: 15px;
 }
 
 .blog-img{
@@ -64,4 +131,21 @@ footer{
 
 #icon-panel i{
     font-size: 28px;
+}
+
+/* popup */
+#blur.banner.active {
+    filter:blur(10px) ;
+    pointer-events: none;
+    user-select: none;
+    overflow-y: hidden;
+}
+
+#Signup-box.container.active{
+    position: fixed;
+    top:50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    overflow-y: hidden;
 }

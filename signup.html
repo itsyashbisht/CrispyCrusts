@@ -44,14 +44,15 @@
           </button>
         </div>
         <div>
-          <input type="text" class="form-control my-3" placeholder="Username" />
+          <input id="username" type="text" class="form-control my-3" placeholder="Username" />
         </div>
         <div>
-          <input type="text" class="form-control mb-3" placeholder="Email Id" />
+          <input id="email" type="email" class="form-control mb-3" placeholder="Email Id" />
         </div>
         <div>
           <input
-            type="text"
+            id="create-pwd"
+            type="password"
             class="form-control"
             placeholder=" Create Password"
           />
@@ -63,7 +64,7 @@
           </p>
         </div>
         <div class="text-center">
-          <button
+          <button id="submit"
             class="btn btn-outline-warning mb-3 fw-bold"
             style="color: white; background-color: #ffc107; width: 90%;"
           >
@@ -127,5 +128,7 @@
       </form>
     </div>
     <script src="signup.js"></script>
+    <script type="module" src="register.js" defer></script>
+    <script type="module" src="login.js" defer></script>
   </body>
 </html>
