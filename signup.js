@@ -2,6 +2,7 @@ const loginbtn = document.querySelector(".login");
 const signupbtn = document.querySelector(".Signup");
 const form1 = document.querySelector(".form1");
 const form2 = document.querySelector(".form2");
+const cancelbtn = document.querySelector(".cancel-btn");
     
 
 
@@ -16,16 +17,9 @@ signupbtn.addEventListener("click",() => {
 
 })
 
-// signupbutton.addEventListener ( "click", () => {
-//     signuppopup.style.display = "" ;
-//     // header.style.display = "none";
-//     // tittle.style.display = "none";
-//     // signupbutton.style.display = "none";
-//     // frontpg.classList.add("show");
-//     // // frontpg.style.filter = "brightness(70%)";
-//     // // signuppopup.style.filter = "brightness(150%);"
-
-// });
+cancelbtn.addEventListener("click", () => {
+    toggle("");
+});
 
 function toggle(){
     var blur = document.querySelector("#blur");

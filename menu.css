@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     height: 100%;
-    background-color: #f4f4f4 !important;
+    background-color:#f4f4f4 !important;
 }
 
 body {
@@ -68,12 +68,14 @@ body {
 
 #content {
     position: fixed;
-    margin-top: 150px;
-    padding-top: 20px;
+    top: 112px;
+    margin-top: 0;
+    padding-top: 0;
     height: 100%;
     overflow-y: auto;
     padding-bottom: 60px;
 }
+
 section{
     padding-top: 20px;
 }
@@ -157,26 +159,35 @@ ul h4 {
 
 /* Responsiveness for different screen-size  */
 
-@media (min-width:768px) {
+@media (max-width: 321px) {
     #content {
-        position: fixed;
-        width: 100%;
-        margin-top: 112px;
-        overflow-y: auto;
-        height: 100%;
-        z-index: auto;
+        top: 135px;
     }
-
-    .navbar2 {
-        position: fixed;
-
+    #navbar2 .nav-link {
+        font-size: 10px;
+        flex-wrap: wrap;
     }
+}
 
-    .content-container {
-        padding-top: 136px;
-        margin-top: 20px;
-        position: fixed;
-        margin-top: auto;
+@media (min-width: 321px) {
+    #content {
+        top: 149px;
+    }
+    #navbar2 .nav-link {
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 376px) {
+    #content {
+        top: 149px;
+    }
+}
+
+@media (min-width: 426px) {
+    #content {
+        top: 112px;
     }
 }
 
@@ -203,7 +214,7 @@ ul h4 {
     }
 } */
 
-@media (min-width:426px) and (max-width:768px) {
+/* @media (min-width:426px) and (max-width:768px) {
     #content {
         margin-top: 68px;
         padding-top: 8px;
@@ -299,9 +310,9 @@ ul h4 {
     .navbar .nav-link {
         padding: 10px;
     }
-}
+} */
 
-
+/* 
 @media (width:375px){
     #content {
         margin-top: 136px;
@@ -317,7 +328,7 @@ ul h4 {
 
     }
 
-}
+} */
 /* Responsiveness content */
 
 footer li {
