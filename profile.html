@@ -63,8 +63,8 @@
         <div id="security-btn" class="container tabs mb-2">Security <button id="security-btn" ><i class="fa-solid fa-chevron-right" style="color: black;"></i></button></div>
         </div>      
       <form id="profile-section" action="" class="row g-3 my-0" style="display:none ;">
-        <div class="previous-btn">
-          <button style="border: none; background-color: white;">
+        <div>
+          <button class="previous-btn" type="button" style="border: none; background-color: white;">
           <i class="fa-solid fa-chevron-left" style="color: black; background-color: white; border: none;"></i>
           </button>
         </div>
@@ -73,7 +73,7 @@
           <div class="profile-picture my-3"></div>
           <p class="card-title small">View or Update your Profile Picture</p>
           <div>
-          <button type="button" class="btn btn-outline-warning mb-3 fw-bold">View</button>
+          <button  type="button" class="btn btn-outline-warning mb-3 fw-bold" data-bs-toggle="modal" data-bs-target="#modal2">View</button>
           <button id="modal-btn" type="button" class="btn btn-outline-warning mb-3 fw-bold" data-bs-toggle="modal" data-bs-target="#modal1">Change</button>
           </div>  
         </div>
@@ -101,8 +101,23 @@
             </div>
           </div>
         </div>
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal1label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-tittle fs-5" id="modal1label">Profile Picture</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+              </div>
+              <div class="modal-body">
+               <div id="preview-picture">
+
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <label for="firstname" class="form-label">Username</label>
+          <label for="name" class="form-label">Username</label>
           <input type="text" class="form-control">
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
@@ -127,22 +142,22 @@
         </div>
       </form>
       <form id="password-section" action="" class="form-floating row g-3 my-0" style="display: none;">
-        <div class="previous-btn">
-          <button style="border: none; background-color: white;">
+        <div>
+          <button class="previous-btn" type="button" style="border: none; background-color: white;">
           <i class="fa-solid fa-chevron-left" style="color: black; background-color: white; border: none;"></i>
         </button>
       </div>       
         <h1 class="pt-3">Change Password</h1>
         <p class="small">Your password must be atleast 6 characters</p>
-        <div class="small form-floating col-lg-4 col-md-6 col-sm-12">
+        <div class="small form-floating col-lg-12 col-md-12 col-sm-12">
           <input type="password" class="form-control me-4"placeholder="Current Password">
           <label for="">Current passowrd</label>
         </div>
-        <div class="small form-floating col-lg-4 col-md-6 col-sm-12">
+        <div class="small form-floating col-lg-12 col-md-12 col-sm-12">
           <input type="password" class="form-control me-4" placeholder="New Password">
           <label for="">New password</label>
         </div>
-        <div class="small form-floating col-lg-4 col-md-6 col-sm-12">
+        <div class="small form-floating col-lg-12 col-md-12 col-sm-12">
           <input type="password" class="form-control me-4" placeholder="Retype New Password">
           <label >Retype New password</label>
         </div>
@@ -156,8 +171,8 @@
         </div>
       </form>
       <form id="security-section" action="" class="pb-5 my-0" style="display: none;">
-        <div class="previous-btn mt-3">
-          <button style="border: none; background-color: white;">
+        <div class="mt-3">
+          <button class="previous-btn" type="button" style="border: none; background-color: white;">
           <i class="fa-solid fa-chevron-left" style="color: black; background-color: white; border: none;"></i>
         </button>
       </div>       

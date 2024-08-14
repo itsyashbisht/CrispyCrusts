@@ -46,7 +46,6 @@
     transition: 0.5s;
 }
 
- 
 .nav-box{
     background-color: #ffc107;
 
@@ -111,20 +110,6 @@ footer{
     background-position: center;
 }
 
-#icon-panel{
-    display: flex;
-    flex-direction: row;
-}
-
-#icon-panel div{
-    height: 35px;
-    width: 35px;
-}
-
-#icon-panel i{
-    font-size: 28px;
-}
-
 /* popup */
 #blur.banner.active {
     filter:brightness(60%) ;
@@ -140,4 +125,11 @@ footer{
     opacity: 1;
     transition: 0.5s;
     overflow-y: hidden;
+}
+
+@media (max-width:575px) {
+    .blog-img2,.blog-img,.blogimg3{
+        width: 35%;
+        height: 40vh;
+    }
 }

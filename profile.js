@@ -6,7 +6,7 @@ const profileSection = document.querySelector("#profile-section");
 const passwordSection = document.querySelector("#password-section");
 const securitySection = document.querySelector("#security-section");
 const tabsbar = document.querySelector("#tabs-bar");
-const previousBtn = document.querySelector(".previous-btn");
+const previousBtn = document.querySelectorAll(".previous-btn");
 
 profilebtn.addEventListener("click", () => {
     profileSection.style.display = "";
@@ -23,19 +23,23 @@ securitybtn.addEventListener("click", () => {
     securitySection.style.display = "block" ;
 });
 
-previousBtn.addEventListener("click", () => {
-    console.log("hahahah")
-    window.location.href = "profile.html";
-    tabsbar.style.display = "" ;
-    profileSection.style.display ="none" ;
-    passwordSection.style.display ="none" ;
-    securitySection.style.display ="none" ;
-})
+previousBtn.forEach ( (button) => {
+    button.addEventListener("click", () => {
+        console.log("Button clicked");
+        window.location.href = "profile.html";
+        tabsbar.style.display = "";
+        profileSection.style.display = "none";
+        passwordSection.style.display = "none";
+        securitySection.style.display = "none";
+    });
+});
 
 
 const dropArea = document.getElementById("drop-area");
 const inputFile = document.getElementById("uploadimg");
 const imageView = document.getElementById("img-view");
+const previewPic = document.querySelector("#preview-picture");
+
 
 inputFile.addEventListener("change",uploadImage);
 
@@ -57,4 +61,5 @@ saveChanges.addEventListener("click",() => {
     window.location.href = "#profile-section";
     imageView.style.display = "";
     dropArea.style.backgroundImage = "none";
+    previewPic.style.backgroundImage =`url(${imgLink})`;
 })
