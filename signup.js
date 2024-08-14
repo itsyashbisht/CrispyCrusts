@@ -3,7 +3,7 @@ const signupbtn = document.querySelector(".Signup");
 const form1 = document.querySelector(".form1");
 const form2 = document.querySelector(".form2");
 const cancelbtn = document.querySelector(".cancel-btn");
-    
+const cancelbtn2 = document.querySelector("#cancel2");
 
 
 loginbtn.addEventListener("click",() => {
@@ -18,6 +18,9 @@ signupbtn.addEventListener("click",() => {
 })
 
 cancelbtn.addEventListener("click", () => {
+    toggle("");
+});
+cancelbtn2.addEventListener("click", () => {
     toggle("");
 });
 

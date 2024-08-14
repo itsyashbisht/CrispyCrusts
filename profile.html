@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sc.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="nav-box fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Crispy Crusts</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navtoggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navtoggler">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="#">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold active" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+      <div class="container-fluid profile-page">
+        <div id="tabs-bar" class="container-fluid" style="position: relative; display: block;">
+          <div id="profile-btn" class="container tabs mt-4 mb-2">Profile <button id="profile-btn" ><i class="fa-solid fa-chevron-right" style="color: black;"></i></button></div>
+        <div id="password-btn" class="container tabs mb-2">Password <button id="password-btn" ><i class="fa-solid fa-chevron-right" style="color: black;"></i></button></div>
+        <div id="security-btn" class="container tabs mb-2">Security <button id="security-btn" ><i class="fa-solid fa-chevron-right" style="color: black;"></i></button></div>
+        </div>      
+      <form id="profile-section" action="" class="row g-3 my-0" style="display:none ;">
+        <div class="previous-btn">
+          <button style="border: none; background-color: white;">
+          <i class="fa-solid fa-chevron-left" style="color: black; background-color: white; border: none;"></i>
+          </button>
+        </div>
+        <div class="profile-sec col-sm-12" >
+          <h1 class=" banner-heading">Account Settings</h1>
+          <div class="profile-picture my-3"></div>
+          <p class="card-title small">View or Update your Profile Picture</p>
+          <div>
+          <button type="button" class="btn btn-outline-warning mb-3 fw-bold">View</button>
+          <button id="modal-btn" type="button" class="btn btn-outline-warning mb-3 fw-bold" data-bs-toggle="modal" data-bs-target="#modal1">Change</button>
+          </div>  
+        </div>
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-tittle fs-5" id="modal1label">Update Picture</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+              </div>
+              <div class="modal-body">
+                <label for="uploadimg" id="drop-area">
+                  <input type="file" accept="image/*" class="form-control" id="uploadimg" hidden>
+                  <div id="img-view">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <p>Drag and drop or click here <br> to upload image</p>
+                    <span>Upload any image from dekstop</span>
+                  </div>
+                </label>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="save-changes"  class="btn btn-primary" data-bs-dismiss="modal" >Save Changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <label for="firstname" class="form-label">Username</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <label for="" class="form-label">Phone number:</label>
+          <input type="number" class="form-control">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <label for="firstname" class="form-label">Email Id:</label>
+          <input type="email" class="form-control">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <label for="firstname" class="form-label">Address:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <label for="firstname" class="form-label">Bio:</label>
+          <textarea name="" class="form-control" rows="3" ></textarea>
+        </div>
+        <div class="text-center mb-5">
+          <button type="submit" class="btn btn-outline-primary fw-bold">Update</button>
+          <button type="submit" class="btn btn-outline-secondary  fw-bold">Cancel</button>
+        </div>
+      </form>
+      <form id="password-section" action="" class="form-floating row g-3 my-0" style="display: none;">
+        <div class="previous-btn">
+          <button style="border: none; background-color: white;">
+          <i class="fa-solid fa-chevron-left" style="color: black; background-color: white; border: none;"></i>
+        </button>
+      </div>       
+        <h1 class="pt-3">Change Password</h1>
+        <p class="small">Your password must be atleast 6 characters</p>
+        <div class="small form-floating col-lg-4 col-md-6 col-sm-12">
+          <input type="password" class="form-control me-4"placeholder="Current Password">
+          <label for="">Current passowrd</label>
+        </div>
+        <div class="small form-floating col-lg-4 col-md-6 col-sm-12">
+          <input type="password" class="form-control me-4" placeholder="New Password">
+          <label for="">New password</label>
+        </div>
+        <div class="small form-floating col-lg-4 col-md-6 col-sm-12">
+          <input type="password" class="form-control me-4" placeholder="Retype New Password">
+          <label >Retype New password</label>
+        </div>
+        <div class="form-check">
+          <p><a class="small" style="text-decoration: none;" href="">Forgotten your Passowrd?</a></p>
+          <input type="checkbox" class="form-check-input" id="logoutcheck">
+          <label class="form-check-label small" for="#logoutcheck">Log out of other devices. choose this if someone else used your account.</label>
+        </div>    
+        <div class="text-center mb-5">
+          <button type="submit" class="btn btn-outline-primary fw-bold" style="width:85%; border-radius: 25px;">Change Password</button>
+        </div>
+      </form>
+      <form id="security-section" action="" class="pb-5 my-0" style="display: none;">
+        <div class="previous-btn mt-3">
+          <button style="border: none; background-color: white;">
+          <i class="fa-solid fa-chevron-left" style="color: black; background-color: white; border: none;"></i>
+        </button>
+      </div>       
+        <h1 class="my-3">Security</h1>
+        <h4>Add extra security to your account</h4>
+        <p>Two-factor authentication protects your account by requiring an additional code when you log in on a device that we don't recognise.</p>
+        <h5>Choose your security method</h5>
+        <div class="form-check">
+          <label for="#authentication-app" class="form-check-label">
+            <h6 class="fw-bold">Authentication app</h6>
+            Recommended. We'll recommend an app to download if you don't have one. It will generate a code that you'll enter when you log in.
+          </label>
+          <input type="radio" id="authentication-app" class="form-check-input" value="checkedValue">
+        </div>
+        <div class="form-check">
+          <label for="#text-message" class="form-check-label">
+            <h6 class="fw-bold">Text message</h6>
+          We'll send a code to the number that you choose
+          </label>
+          <input type="radio" id="text-message" class="form-check-input" value="checkedValue" > 
+        </div>
+      </form>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -45,14 +45,43 @@ submit.addEventListener("click", function(event){
   .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
+    console.log("user created :", user);
     alert("Creating Account...");
     window.location.href = "index.html"
     // ...
   })
   .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    alert(errorMessage);
+    handleAuthError(error);
 });
 });
 
+function showAlert(message, type = "error") {
+  console.log(`Alert[${type}]:${message}`);
+  alert(message);
+}
+
+
+function handleAuthError(error) {
+  const errorCode = error.code ;
+  console.log(errorCode);
+  switch(errorCode) {
+    case "auth/email-already-in-use":
+      showAlert("This email address is already in use.");
+      break;
+    case "auth/invalid-email":
+      showAlert("Invalid email address.");
+      break;
+    case "auth/weak-password":
+      showAlert("Password is too weak.");
+      break;
+    case "auth/operation-not-allowed":
+      showAlert("Email/password accounts are not enabled.");
+      break;
+    case "auth/invalid-credential":
+      showAlert("Invalid credential. Please try again.");
+      console(errorCode);
+      break;
+    default:
+      showAlert("An unexpected error occurred. Please try again.");
+  }
+}

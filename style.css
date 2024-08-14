@@ -15,12 +15,6 @@
 
 }
 
-/* .show{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-} */
-
 .banner-heading{
     z-index: 1;
     padding-top: 260px;
@@ -133,7 +127,7 @@ footer{
 
 /* popup */
 #blur.banner.active {
-    filter:blur(10px) ;
+    filter:brightness(60%) ;
     pointer-events: none;
     user-select: none;
     overflow-y: hidden;

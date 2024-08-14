@@ -25,7 +25,7 @@ function isValidEmail(email) {
 
 //submit
 const submit = document.getElementById("submit");
-submit.addEventListener("click", function(event){
+submit.addEventListener("click", function(event) {
   event.preventDefault();
 
   const email = document.getElementById("email").value.trim();
@@ -46,7 +46,7 @@ submit.addEventListener("click", function(event){
     // Signed up 
     const user = userCredential.user;
     alert("Creating Account...");
-    window.location.href = "index.html"
+    window.location.href = "index.html" ;
     // ...
   })
   .catch((error) => {
