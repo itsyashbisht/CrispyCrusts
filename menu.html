@@ -16,6 +16,10 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="banner">
@@ -47,7 +51,7 @@
                   <a class="nav-link text-light fw-bold" href="#">Orders</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light fw-bold" href="#">Profile</a>
+                  <a class="nav-link text-light fw-bold" href="profile.html">Profile</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-light fw-bold" href="#">Contact Us</a>
@@ -71,8 +75,33 @@
             <li class="nav-item">
               <a class="nav-link" href="#list-example4">Dessert</a>
             </li>
+            <li class="nav-item">
+              <a href="#offcanvas1" role="button" class="nav-link btn text-danger fw-bold" data-bs-toggle="offcanvas" >
+                <i class="fa-solid fa-cart-shopping" style="color: #000000; font-size: medium;"></i>
+              </a>
+            </li>
           </ul>
         </nav>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas1" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">Your Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+      <div class="offcanvas-body">
+          <div id="cart-item" class="cart-card my-2">
+            <div class="card-image"></div>
+            <span id="name-item" class="small">Caribbean Spicy Zinger Burger</span>
+            <span id="price-item">₹208.57</span>
+            <button class="minus-btn" type="button">-</button>
+            <span id="amount-item" class="text-dark">1</span>
+            <button class="plus-btn" type="button">+</button>
+          </div>
+      </div>
+        <div class="offcanvas-footer">
+          <h6>Total :</h6>
+          <h6>₹208.57</h6>
+        </div>
       </div>
       <div class="content-conatiner mt-md-5  mt-lg-0">
         <div
@@ -92,65 +121,65 @@
               "Life is too short to miss out on the beautiful things like a
               double cheeseburger."            </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="0">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="B2.jpg" alt="" />
-            <h6 class="card-title py-2">Caribbean Spicy Zinger Burger</h6>
+            <h6 class="card-title py-2">Cheese Burst Deluxe</h6>
             <p class="card-text py-2">
               "Life is too short to miss out on the beautiful things like a
               double cheeseburger."            </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="1">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="B3.jpg" alt="" />
-            <h6 class="card-title py-2">Caribbean Spicy Zinger Burger</h6>
+            <h6 class="card-title py-2">Smoky BBQ Blaze</h6>
             <p class="card-text py-2">
               "Life is too short to miss out on the beautiful things like a
               double cheeseburger."            </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="2">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="B4.jpg" alt="" />
-            <h6 class="card-title py-2">Caribbean Spicy Zinger Burger</h6>
+            <h6 class="card-title py-2">Crispy Chicken Crunch</h6>
             <p class="card-text py-2">
               "Life is too short to miss out on the beautiful things like a
               double cheeseburger."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="3">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="B5.jpg" alt="" />
-            <h6 class="card-title py-2">Caribbean Spicy Zinger Burger</h6>
+            <h6 class="card-title py-2">Spicy Inferno Zinger Burger</h6>
             <p class="card-text py-2">
               "Life is too short to miss out on the beautiful things like a
               double cheeseburger."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="4">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="B6.jpg" alt="" />
-            <h6 class="card-title py-2">Caribbean Spicy Zinger Burger</h6>
+            <h6 class="card-title py-2">Classic Crust Burger</h6>
             <p class="card-text py-2">
               "Life is too short to miss out on the beautiful things like a
               double cheeseburger."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="5">Add to Cart</button>
           </div>
           <div class="food-card">
-            <img src="B1.jpg" alt="" />
-            <h6 class="card-title py-2">Caribbean Spicy Zinger Burger</h6>
+            <img src="B7.avif" alt="" />
+            <h6 class="card-title py-2">Spicy Mighty Melt Burger</h6>
             <p class="card-text py-2">
               "Life is too short to miss out on the beautiful things like a
               double cheeseburger."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="6">Add to Cart</button>
           </div>
         </section>
         <section class="food-list mt-sm-4  pt-sm-5  mt-md-4  pt-lg-3  pt-md-3" id="list-example2">
@@ -161,7 +190,7 @@
               "There's no better feeling in the world than a warm pizza box on your lap."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="7">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="P2.jpg" alt="" />
@@ -170,7 +199,7 @@
               "There's no better feeling in the world than a warm pizza box on your lap."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="8">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="P3.jpg" alt="" />
@@ -179,7 +208,7 @@
               "There's no better feeling in the world than a warm pizza box on your lap."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="9">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="P4.jpg" alt="" />
@@ -188,7 +217,7 @@
               "There's no better feeling in the world than a warm pizza box on your lap."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="10">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="P5.jpg" alt="" />
@@ -197,7 +226,7 @@
               "There's no better feeling in the world than a warm pizza box on your lap."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="11">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="P6.jpg" alt="" />
@@ -206,7 +235,7 @@
               "There's no better feeling in the world than a warm pizza box on your lap."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="12">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="P7.jpg" alt="" />
@@ -215,7 +244,7 @@
               "There's no better feeling in the world than a warm pizza box on your lap."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="13">Add to Cart</button>
           </div>
         </section>
         <section class="food-list mt-sm-4  pt-sm-5  mt-md-4  pt-lg-3  pt-md-3" id="list-example3">
@@ -226,7 +255,7 @@
               "Sip, savor, and celebrate the simple joys of life."
             </p>
             <strong class="pb-2">₹57.14</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="14">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="bev2.jpg" alt="" />
@@ -235,7 +264,7 @@
               "Sip, savor, and celebrate the simple joys of life."
             </p>
             <strong class="pb-2">₹57.14</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="15">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="bev3.jpg" alt="" />
@@ -244,7 +273,7 @@
               "Sip, savor, and celebrate the simple joys of life."
             </p>
             <strong class="pb-2">₹57.14</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="16">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="bev4.jpg" alt="" />
@@ -253,7 +282,7 @@
               "Sip, savor, and celebrate the simple joys of life."
             </p>
             <strong class="pb-2">₹57.14</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="17">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="bev5.jpg" alt="" />
@@ -262,7 +291,7 @@
               "Sip, savor, and celebrate the simple joys of life."
             </p>
             <strong class="pb-2">₹57.14</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="18">Add to Cart</button>
           </div>
         </section>
         <section class="food-list mt-sm-4  pt-sm-5  mt-md-4 pt-lg-3  pt-md-3" id="list-example4">
@@ -273,7 +302,7 @@
               "You can't buy happiness, but you can buy dessert, and that's kind of the same thing."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="19">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="D2.jpg" alt="" />
@@ -282,7 +311,7 @@
               "You can't buy happiness, but you can buy dessert, and that's kind of the same thing."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="20">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="D3.jpg" alt="" />
@@ -291,7 +320,7 @@
               "You can't buy happiness, but you can buy dessert, and that's kind of the same thing."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="21">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="D8.jpg" alt="" />
@@ -300,7 +329,7 @@
               "You can't buy happiness, but you can buy dessert, and that's kind of the same thing."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="22">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="D9.jpg" alt="" />
@@ -309,7 +338,7 @@
               "You can't buy happiness, but you can buy dessert, and that's kind of the same thing."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="23">Add to Cart</button>
           </div>
           <div class="food-card">
             <img src="D7.jpg" alt="" />
@@ -318,7 +347,7 @@
               "You can't buy happiness, but you can buy dessert, and that's kind of the same thing."
             </p>
             <strong class="pb-2">₹208.57</strong>
-            <button class="btn btn-outline-warning">Add to Cart</button>
+            <button class="btn btn-outline-warning addtocart-btn" id="24">Add to Cart</button>
           </div>
         </section>
         <section class="mt-sm-4  pt-sm-5  mt-md-4 pt-lg-3  pt-md-3">
@@ -374,14 +403,6 @@
                 </div>
               </div>
             </div>
-            <div class="container">
-              <div id="icon-panel">
-                <div ><i class="fa-brands fa-facebook" style="color: #FFD43B;"><a href="#"></a></i></div>
-                <div class="ms-3"><i class="fa-brands fa-instagram" style="color: #FFD43B;"><a href="#"></a></i></div>
-                <div class="ms-3"> <i class="fa-brands fa-youtube" style="color: #FFD43B;"><a href="#"></a></i></div>
-              </div>
-            </div>
-            <br>
             <div class="footer">
               <br style="color: #FFD43B;">
               <h6 class="text-center text-light">©2024 CrispyCrusts. All Rights Reserved</h6>
@@ -390,6 +411,7 @@
         </section>
       </div>
       </div>     
-    </div>  
+    </div>
+    <script src="menu.js"></script>  
   </body>
 </html>

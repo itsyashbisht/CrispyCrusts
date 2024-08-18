@@ -51,21 +51,70 @@ body {
 #navbar2 .active {
     background-color: #ffc107;
     border-top: 100px;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 #navbar2 .nav-link {
     color: black !important;
     font-weight: 500;
 }
-
+.offcanvas-header{
+    background-color:#ffd700;
+    box-shadow: 0 2px 3px rgba(0, 0,0,0.2);
+}
+/* .offcanvas-body{
+    background-color: #fceaff;
+ } */
+.offcanvas-footer{
+    display: flex;
+    background-color: #ffd700;
+    justify-content: space-between;
+    padding: 20px 10px 10px 10px;
+    box-shadow: 0 -2px 3px rgba(0, 0,0,0.2);
+}
+.cart-card{
+    height: 65px;
+    width: 100%;
+    border: 2px solid #ff85c0;
+    background-color: #fff0f6;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2) ; 
+    display: flex;
+    align-items: center;
+}
+.card-image{
+    width: 80px;
+    height: 52px;
+    display: flex;
+    margin: 0px 8px 0px 5px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    background-image: url(B1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .food-list {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
 }
+#amount-item{
+    font-size: 1rem;
+}
 
+.plus-btn,.minus-btn {
+    border-radius: 50%;
+    height: auto;
+    width: 30px;
+    font-size: 1.1rem;
+    border: none;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    margin: 0px 6px 0px 6px;
+}
+#price-item{
+    margin: 2px 20px 0px 2px;
+}
 #content {
     position: fixed;
     top: 112px;
@@ -85,7 +134,11 @@ section{
     margin-top: 0.5rem;
     overflow: auto;
 }
-
+button .btn .btn-outline-warning{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ffc107;
+    transition: all ease-in-out 0.25s;
+}
 .food-card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -134,21 +187,6 @@ footer {
     width: 100%;
     position: relative;
 }
-
-#icon-panel {
-    display: flex;
-    flex-direction: row;
-}
-
-#icon-panel div {
-    height: 35px;
-    width: 35px;
-}
-
-#icon-panel i {
-    font-size: 28px;
-}
-
 ul h4 {
     color: #ffc107;
 }
